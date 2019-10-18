@@ -2,7 +2,7 @@
 	"name": "vs-code-touchbar",
 	"publisher": "Maruan-Alush",
 	"displayName": "vs-code-touchbar",
-	"description": "",
+	"description": "This is a WIP project to allow for configurable Touch Bar buttons.",
 	"icon": "assets/icon.png",
 	"repository": {
 		"url": "https://github.ibm.com/Maruan-Alush/vs-code-touchbar"
@@ -41,6 +41,16 @@
 					"group": "editing"
 				}
 			]
+		},
+		"configuration": {
+			"title": "TouchBar",
+			"properties": {
+				"touchbar.testString": {
+					"type": "string",
+					"default": "build",
+					"description": "Choose what npm command will run from the arrow button."
+				}
+			}
 		}
 	},
 	"scripts": {
