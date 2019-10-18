@@ -5,7 +5,10 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "vs-code-touchbar" is now active!');
 
 	let NPM_run = vscode.commands.registerCommand('extension.NPM_run', () => {
-		
+
+		let x = getConfiguration('touchbar').get('testSetting');
+		console.log(x);
+
 		vscode.commands.executeCommand('npm-script.run');
 	});
 
