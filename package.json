@@ -2,7 +2,7 @@
 	"name": "vs-code-touchbar",
 	"displayName": "vs-code-touchbar",
 	"description": "",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
@@ -14,16 +14,17 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.NPM_run",
-			"title": "Run",
-			"icon": "./assets/rightArrow.png"
-		},
-		{
-			"command": "extension.NPM_build",
-			"title": "Build"
-		}
-	],
+		"commands": [
+			{
+				"command": "extension.NPM_run",
+				"title": "Run",
+				"icon": "./assets/rightArrow.png"
+			},
+			{
+				"command": "extension.NPM_build",
+				"title": "Build"
+			}
+		],
 		"menus": {
 			"touchBar": [
 				{
