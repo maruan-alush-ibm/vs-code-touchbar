@@ -3,6 +3,7 @@
 	"publisher": "Maruan-Alush02",
 	"displayName": "vs-code-touchbar",
 	"description": "",
+	"repository": {"url": "https://github.ibm.com/Maruan-Alush/vs-code-touchbar"},
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.39.0"
