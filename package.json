@@ -22,8 +22,7 @@
 		"commands": [
 			{
 				"command": "extension.NPM_run",
-				"title": "Run",
-				"icon": "./assets/rightArrow.png"
+				"title": "Run"
 			},
 			{
 				"command": "extension.NPM_build",
