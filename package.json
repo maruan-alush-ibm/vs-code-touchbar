@@ -14,12 +14,28 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
+		"commands": [{
+			"command": "extension.NPM_run",
+			"title": "Run",
+			"icon": "./assets/rightArrow.png"
+		},
+		{
+			"command": "extension.NPM_build",
+			"title": "Build"
+		}
+	],
+		"menus": {
+			"touchBar": [
+				{
+					"command": "extension.NPM_run",
+					"group": "editing"
+				},
+				{
+					"command": "extension.NPM_build",
+					"group": "editing"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
