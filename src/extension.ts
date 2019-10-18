@@ -4,20 +4,20 @@ export function activate(context: vscode.ExtensionContext) {
 
 	console.log('Congratulations, your extension "vs-code-touchbar" is now active!');
 
-	let NPM_run = vscode.commands.registerCommand('extension.NPM_run', () => {
+	let NPM_RUN = vscode.commands.registerCommand('extension.NPM_run', () => {
 
-		let x = getConfiguration('touchbar').get('testSetting');
-		console.log(x);
+		//let x = getConfiguration('touchbar').get('testSetting');
+		//console.log(x);
 
 		vscode.commands.executeCommand('npm-script.run');
 	});
 
-	let NPM_build = vscode.commands.registerCommand('extension.NPM_build', () => {
+	let NPM_BUILD = vscode.commands.registerCommand('extension.NPM_build', () => {
 		
 		vscode.commands.executeCommand('npm-script.build');
 	});
 
-	context.subscriptions.push(NPM_run, NPM_build);
+	context.subscriptions.push(NPM_RUN, NPM_BUILD);
 }
 
 
