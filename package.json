@@ -1,7 +1,7 @@
 {
 	"name": "vs-code-touchbar",
 	"publisher": "Maruan-Alush",
-	"displayName": "vs-code-touchbar",
+	"displayName": "VS Code TouchBar",
 	"description": "This is a WIP project to allow for configurable Touch Bar buttons.",
 	"icon": "assets/icon.png",
 	"repository": {
@@ -16,7 +16,9 @@
 	],
 	"activationEvents": [
 		"onCommand:extension.NPM_run",
-		"onCommand:extension.NPM_build"
+		"onCommand:extension.NPM_build",
+		"onCommand:extension.NPM_start",
+		"onCommand:extension.NPM_test"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -28,6 +30,14 @@
 			{
 				"command": "extension.NPM_build",
 				"title": "Build"
+			},
+			{
+				"command": "extension.NPM_start",
+				"title": "Start"
+			},
+			{
+				"command": "extension.NPM_test",
+				"title": "Test"
 			}
 		],
 		"menus": {
@@ -38,6 +48,14 @@
 				},
 				{
 					"command": "extension.NPM_build",
+					"group": "editing"
+				},
+				{
+					"command": "extension.NPM_start",
+					"group": "editing"
+				},
+				{
+					"command": "extension.NPM_test",
 					"group": "editing"
 				}
 			]
@@ -54,6 +72,16 @@
 					"type": "string",
 					"default": "run",
 					"description": "Choose what npm command will run from the RUN button"
+				},
+				"touchbar.start": {
+					"type": "string",
+					"default": "start",
+					"description": "Choose what npm command will run from the START button"
+				},
+				"touchbar.test": {
+					"type": "string",
+					"default": "test",
+					"description": "Choose what npm command will run from the TEST button"
 				}
 			}
 		}
