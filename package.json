@@ -45,10 +45,15 @@
 		"configuration": {
 			"title": "TouchBar",
 			"properties": {
-				"touchbar.testString": {
+				"touchbar.build": {
 					"type": "string",
 					"default": "build",
-					"description": "Choose what npm command will run from the arrow button."
+					"description": "Choose what npm command will run from the BUILD button."
+				},
+				"touchbar.run": {
+					"type": "string",
+					"default": "run",
+					"description": "Choose what npm command will run from the RUN button"
 				}
 			}
 		}

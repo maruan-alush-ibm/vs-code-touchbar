@@ -6,14 +6,17 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let NPM_RUN = vscode.commands.registerCommand('extension.NPM_run', () => {
 
-		let x = vscode.workspace.getConfiguration('touchbar').get('testString');
+		let x = vscode.workspace.getConfiguration('touchbar').get('run');
 
 		vscode.commands.executeCommand('npm-script.' + String(x));
 	});
 
 	let NPM_BUILD = vscode.commands.registerCommand('extension.NPM_build', () => {
+
+		let x = vscode.workspace.getConfiguration('touchbar').get('build');
 		
-		vscode.commands.executeCommand('npm-script.build');
+		vscode.commands.executeCommand('npm-script.' + String(x));
+
 	});
 
 	context.subscriptions.push(NPM_RUN, NPM_BUILD);
