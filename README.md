@@ -21,8 +21,6 @@ The `touchbar.test` is the name of the button for which your are changing the co
 
 ## Contributing
 
-Funnily enough, I cannot find out how to edit the link to the repo so I will just add it here. The other link is to a private IBM repo so I have moved it over to my personal account and made it public!
-
 https://github.com/maruan-alush-ibm/vs-code-touchbar
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

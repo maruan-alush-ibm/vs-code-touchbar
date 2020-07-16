@@ -5,7 +5,7 @@
   "description": "This is a WIP project to allow for configurable Touch Bar buttons.",
   "icon": "assets/icon.png",
   "repository": {
-    "url": "https://github.ibm.com/Maruan-Alush/vs-code-touchbar"
+    "url": "https://github.com/maruan-alush-ibm/vs-code-touchbar"
   },
   "version": "1.5.1",
   "engines": {
