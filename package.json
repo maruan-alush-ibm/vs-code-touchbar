@@ -1,107 +1,107 @@
 {
-	"name": "vs-code-touchbar",
-	"publisher": "Maruan-Alush",
-	"displayName": "VS Code TouchBar",
-	"description": "This is a WIP project to allow for configurable Touch Bar buttons.",
-	"icon": "assets/icon.png",
-	"repository": {
-		"url": "https://github.ibm.com/Maruan-Alush/vs-code-touchbar"
-	},
-	"version": "1.5.0",
-	"engines": {
-		"vscode": "^1.39.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.NPM_run",
-		"onCommand:extension.NPM_build",
-		"onCommand:extension.NPM_start",
-		"onCommand:extension.NPM_test"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.NPM_run",
-				"title": "Run"
-			},
-			{
-				"command": "extension.NPM_build",
-				"title": "Build"
-			},
-			{
-				"command": "extension.NPM_start",
-				"title": "Start"
-			},
-			{
-				"command": "extension.NPM_test",
-				"title": "Test"
-			}
-		],
-		"menus": {
-			"touchBar": [
-				{
-					"command": "extension.NPM_run",
-					"group": "editing"
-				},
-				{
-					"command": "extension.NPM_build",
-					"group": "editing"
-				},
-				{
-					"command": "extension.NPM_start",
-					"group": "editing"
-				},
-				{
-					"command": "extension.NPM_test",
-					"group": "editing"
-				}
-			]
-		},
-		"configuration": {
-			"title": "TouchBar",
-			"properties": {
-				"touchbar.build": {
-					"type": "string",
-					"default": "build",
-					"description": "Choose what npm command will run from the BUILD button."
-				},
-				"touchbar.run": {
-					"type": "string",
-					"default": "run",
-					"description": "Choose what npm command will run from the RUN button"
-				},
-				"touchbar.start": {
-					"type": "string",
-					"default": "start",
-					"description": "Choose what npm command will run from the START button"
-				},
-				"touchbar.test": {
-					"type": "string",
-					"default": "test",
-					"description": "Choose what npm command will run from the TEST button"
-				}
-			}
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.39.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.2.0"
-	}
+  "name": "vs-code-touchbar",
+  "publisher": "Maruan-Alush",
+  "displayName": "VS Code TouchBar",
+  "description": "This is a WIP project to allow for configurable Touch Bar buttons.",
+  "icon": "assets/icon.png",
+  "repository": {
+    "url": "https://github.ibm.com/Maruan-Alush/vs-code-touchbar"
+  },
+  "version": "1.5.1",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.NPM_run",
+    "onCommand:extension.NPM_build",
+    "onCommand:extension.NPM_start",
+    "onCommand:extension.NPM_test"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.NPM_run",
+        "title": "Run"
+      },
+      {
+        "command": "extension.NPM_build",
+        "title": "Build"
+      },
+      {
+        "command": "extension.NPM_start",
+        "title": "Start"
+      },
+      {
+        "command": "extension.NPM_test",
+        "title": "Test"
+      }
+    ],
+    "menus": {
+      "touchBar": [
+        {
+          "command": "extension.NPM_run",
+          "group": "editing"
+        },
+        {
+          "command": "extension.NPM_build",
+          "group": "editing"
+        },
+        {
+          "command": "extension.NPM_start",
+          "group": "editing"
+        },
+        {
+          "command": "extension.NPM_test",
+          "group": "editing"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "TouchBar",
+      "properties": {
+        "touchbar.build": {
+          "type": "string",
+          "default": "build",
+          "description": "Choose what npm command will run from the BUILD button."
+        },
+        "touchbar.run": {
+          "type": "string",
+          "default": "run",
+          "description": "Choose what npm command will run from the RUN button"
+        },
+        "touchbar.start": {
+          "type": "string",
+          "default": "start",
+          "description": "Choose what npm command will run from the START button"
+        },
+        "touchbar.test": {
+          "type": "string",
+          "default": "test",
+          "description": "Choose what npm command will run from the TEST button"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.39.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "typescript": "^3.3.1",
+    "tslint": "^5.12.1",
+    "vscode-test": "^1.2.0"
+  }
 }
